@@ -12,12 +12,9 @@
 -rw-r--r--  1 januar          januar          -------          8. Apr 21:28   Assembly                       lll_source.asm                       2626 Zeilen Quellcode
 
 ------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
-# Assembly < C <<< Rust
-Warum benötigt ein Rust kompilat egal ob nur reiner code mit rustc compiliert oder mit cargo immer etwa 185 mal mehr binär oder maschienencode als ein C kompilat mit ähnlichen aufbau und libraris. Und was hat C noch an bischen overhead das Assembly 1,6 mal so klein ist. Das verrückte ist nicht C vs. asm das war zu erwarten aber was ist mit Rust
-
-----
-
+## Assembly ≤ C ≤ Rust
 Der Hauptgrund für den riesigen Unterschied bei Rust (ca. 33× beim Insertion-Sort-Beispiel und ~185× beim „lll“-Programm) liegt am Linken der Standardbibliothek – und das ist nicht nur „Rust ist halt bloated“, sondern ein fundamentales Design-Entscheidung.1. Rust vs. C: Statisches vs. dynamisches Linken der BibliothekenC (gcc/clang):
 Die Standard-Bibliothek (libc / glibc) wird standardmäßig dynamisch gelinkt. Das heißt: Dein insertionSort_c_bin (15,7 KB) oder lll_c_compilat (22,3 KB) enthält nur deinen eigenen Code + einen winzigen Startup-Teil (crt0.o).
 Der ganze schwere Kram (printf, malloc, I/O, String-Funktionen, Threading usw.) liegt in /lib/x86_64-linux-gnu/libc.so.6 und wird erst zur Laufzeit vom Linux-Loader nachgeladen. Deshalb bleibt die Binary winzig, egal wie viel „Library-Code“ du theoretisch nutzt.
