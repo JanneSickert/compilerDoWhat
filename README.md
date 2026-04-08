@@ -1,15 +1,14 @@
-## Ohne Librarys (Handgeschrieben)
-------------------------------------------------------------------------------
--rwxr-xr-x  1 januar          januar          522.5 KB         8. Apr 21:07   executable_linux_binary        insertionSort_rust_kompilat          27   Zeilen Quellcode
--rwxr-xr-x  1 januar          januar          15.7 KB          8. Apr 21:06   executable_linux_binary        insertionSort_c_bin                  40   Zeilen Quellcode       
--rwxr-xr-x  1 januar          januar          9.4 KB           8. Apr 21:16   executable_linux_binary        insertion_sort_x86_assembly          155  Zeilen Quellcode
+<table>
+<tr><td colspan="6"><strong>Ohne Librarys (Handgeschrieben)</strong></td></tr>
+<tr><td>Ohne Librarys</td><td>executable_linux_binary</td><td>522.5 KB</td><td>8. Apr 21:07</td><td>insertionSort_rust_kompilat</td><td>27</td></tr>
+<tr><td>Ohne Librarys</td><td>executable_linux_binary</td><td>15.7 KB</td><td>8. Apr 21:06</td><td>insertionSort_c_bin</td><td>40</td></tr>
+<tr><td>Ohne Librarys</td><td>executable_linux_binary</td><td>9.4 KB</td><td>8. Apr 21:16</td><td>insertion_sort_x86_assembly</td><td>155</td></tr>
 
-
-## Mit standart Linux Kernel Librarys(ASM generiert)
-------------------------------------------------------------------------------
--rwxr-xr-x  2 januar          januar          4051 KB          8. Apr 21:42   executable_linux_binary        lll_rust_compilat                    344  Zeilen Quellcode
--rwxr-xr-x  1 januar          januar          22.3 KB          8. Apr 20:56   executable_linux_binary        lll_c_compilat                       568  Zeilen Quellcode
--rw-r--r--  1 januar          januar          -------          8. Apr 21:28   Assembly                       lll_source.asm                       2626 Zeilen Quellcode
+<tr><td colspan="6"><strong>Mit Standard Linux Kernel Librarys</strong></td></tr>
+<tr><td>Mit Librarys</td><td>executable_linux_binary</td><td>4051 KB</td><td>8. Apr 21:42</td><td>lll_rust_compilat</td><td>344</td></tr>
+<tr><td>Mit Librarys</td><td>executable_linux_binary</td><td>22.3 KB</td><td>8. Apr 20:56</td><td>lll_c_compilat</td><td>568</td></tr>
+<tr><td>Mit Librarys</td><td>Assembly</td><td>—</td><td>8. Apr 21:28</td><td>lll_source.asm</td><td>2626</td></tr>
+</table>
 
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
